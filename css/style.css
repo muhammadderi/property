@@ -175,17 +175,18 @@ h2 {
 
 #features h2 {
   font-size: 48px;
-  font-style: normal;
+  color: #fff;
   font-weight: 600;
   line-height: 72px;
   letter-spacing: 0em;
   text-align: center;
-  color: white;
-  margin-top: 20px;
+  background-repeat: no-repeat;
 }
 
 #features p {
   font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
   color: white;

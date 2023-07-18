@@ -79,7 +79,7 @@
       </section>
       <section id="services">
         <div class="container">
-          <div class="row">
+          <div class="row mt-5">
             <div class="col-12 text-center">
               <h2>Our Services</h2>
               <span class="subtitle"
@@ -148,29 +148,145 @@
             <div class="col-12 text-center">
               <h2>Find Your Dream House</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repellendus in ipsa unde blanditiis maxime saepe.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                perspiciatis in, officiis nesciunt ad id.
               </p>
             </div>
           </div>
         </div>
         <div class="col-10 mx-auto">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#services"
-                >Sell</a
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#jual"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
               >
+                Sell
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rent</a>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#sewa"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Rent
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">New Property</a>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#propertibaru"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                New Property
+              </button>
             </li>
+
+            <!-- dropdown -->
           </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="jual"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="img/Home Icon.png" alt="homeicon" />
+                  House Type
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+
+                <!-- Range price -->
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="img/Money-icon.png" alt="moneyicon" />
+                  Range Price
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+                <!-- button submit -->
+
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="search by location, property"
+                />
+                <button
+                  class="btn btn-outline-secondary text-white"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Search
+                </button>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="sewa"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              Rent
+            </div>
+            <div
+              class="tab-pane fade"
+              id="propertibaru"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              tabindex="0"
+            >
+              New Property
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
