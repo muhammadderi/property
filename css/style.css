@@ -19,7 +19,7 @@ body {
   font-size: 16px;
 }
 
-.button-secondary {
+.button-secondary-login {
   width: 133px;
   height: 40px;
   background-color: white;
@@ -27,6 +27,7 @@ body {
   border: none;
   font-size: 16px;
   font-weight: 700;
+  border-radius: 20px;
 }
 
 .button-primary {
@@ -68,12 +69,13 @@ body {
 
 .button-lg-primary {
   width: 237px;
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   color: var(--pr-color);
   border: none;
   font-size: 16px;
   font-weight: 700;
+  border-radius: 30px;
 }
 
 .navbar {
@@ -96,7 +98,8 @@ body {
   padding: 100px 0;
 }
 
-h2 {
+h2,
+#recomendations h2 {
   font-size: 48px;
   font-weight: 500px;
   color: var(--pr-color);
@@ -190,4 +193,71 @@ h2 {
   letter-spacing: 0em;
   text-align: center;
   color: white;
+}
+
+.search-bar {
+  height: 88px;
+  background-color: #fff;
+  color: var(--pr-color);
+}
+
+.search-bar:focus {
+  border: none;
+}
+
+.button-secondary {
+  width: 200px;
+  height: 88px;
+  background-color: #fff;
+  color: var(--pr-color);
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+
+.button-search {
+  background-color: var(--pr-color);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.button-search:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.nav-tabs .nav-link {
+  color: black;
+  border-radius: 0 0 0 0;
+  background-color: white;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: var(--pr-color);
+}
+
+.card {
+  width: 22rem;
+  height: 440px;
+  border: none;
+}
+
+.card-body h4 {
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 0.8rem;
+}
+
+.card-body p {
+  color: #454545;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card:hover {
+  background: linear-gradient(170deg, var(--pr-color), #007245, #007245, #000);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }

@@ -40,7 +40,7 @@
             </div>
             <div>
               <button class="button-primary">Register</button>
-              <button class="button-secondary">Login</button>
+              <button class="button-secondary-login">Login</button>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@
           </div>
         </div>
       </section>
-      <section id="features">
+      <section id="features" class="d-flex align-items-center mt-5">
         <div class="container">
           <div class="row">
             <div class="col-12 text-center">
@@ -153,134 +153,301 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-10 mx-auto">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#jual"
-                type="button"
-                role="tab"
-                aria-controls="home-tab-pane"
-                aria-selected="true"
-              >
-                Sell
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#sewa"
-                type="button"
-                role="tab"
-                aria-controls="profile-tab-pane"
-                aria-selected="false"
-              >
-                Rent
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="contact-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#propertibaru"
-                type="button"
-                role="tab"
-                aria-controls="contact-tab-pane"
-                aria-selected="false"
-              >
-                New Property
-              </button>
-            </li>
-
-            <!-- dropdown -->
-          </ul>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="jual"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-              tabindex="0"
-            >
-              <div class="input-group mb-3">
+          <div class="col-10 mx-auto float-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
                 <button
-                  class="btn btn-light dropdown-toggle"
+                  class="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#jual"
                   type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
                 >
-                  <img src="img/Home Icon.png" alt="homeicon" />
-                  House Type
+                  Sell
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-
-                <!-- Range price -->
+              </li>
+              <li class="nav-item" role="presentation">
                 <button
-                  class="btn btn-light dropdown-toggle"
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#sewa"
                   type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
                 >
-                  <img src="img/Money-icon.png" alt="moneyicon" />
-                  Range Price
+                  Rent
                 </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-                <!-- button submit -->
-
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="search by location, property"
-                />
+              </li>
+              <li class="nav-item" role="presentation">
                 <button
-                  class="btn btn-outline-secondary text-white"
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#propertibaru"
                   type="button"
-                  id="button-addon2"
+                  role="tab"
+                  aria-controls="contact-tab-pane"
+                  aria-selected="false"
                 >
-                  Search
+                  New Property
                 </button>
+              </li>
+
+              <!-- dropdown -->
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="jual"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="input-group mb-3 search-bar">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Home Icon.png" alt="homeicon" />
+                    House Type
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <!-- Range price -->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Money-icon.png" alt="moneyicon" />
+                    Range Price
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!-- button submit -->
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="#"
+                    placeholder="search by location, property"
+                  />
+                  <button
+                    class="button-search"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="sewa"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+                tabindex="0"
+              >
+                <div class="input-group mb-3 search-bar">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Home Icon.png" alt="homeicon" />
+                    House Type
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <!-- Range price -->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Money-icon.png" alt="moneyicon" />
+                    Range Price
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!-- button submit -->
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="#"
+                    placeholder="search by location, property"
+                  />
+                  <button
+                    class="button-search"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="propertibaru"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+                tabindex="0"
+              >
+                <div class="input-group mb-3 search-bar">
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Home Icon.png" alt="homeicon" />
+                    House Type
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+
+                  <!-- Range price -->
+                  <button
+                    class="button-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="img/Money-icon.png" alt="moneyicon" />
+                    Range Price
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                  <!-- button submit -->
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="#"
+                    placeholder="search by location, property"
+                  />
+                  <button
+                    class="button-search"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Search
+                  </button>
+                </div>
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="sewa"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-              tabindex="0"
-            >
-              Rent
+          </div>
+        </div>
+      </section>
+      <section id="recomendations" class="mt-5">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 text-center">
+              <h2 class="mb-4">Recomendation For You</h2>
             </div>
-            <div
-              class="tab-pane fade"
-              id="propertibaru"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-              tabindex="0"
-            >
-              New Property
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="card p-2">
+                <img src="img/Rekomendasi1.png" alt="" />
+                <div class="card-body">
+                  <h4>IDR 200.000.000</h4>
+                  <p class="mb-4">JL.Soekarno Hatta
+                    <br><span class="text-danger">Sewa</span>
+                  </p>  
+                </div>
+
+                <div class="card-facility">
+                  <span>
+                    <img src="img/Icon Kamar Tidur.png" alt="kamartidur" />3
+                    <p>Kamar Tidur</p>
+                  </span>
+                  <div class="card-facility">
+                    <span>
+                      <img src="img/Icon Kamar Tidur.png" alt="kamartidur" />3
+                      <p>Kamar Tidur</p>
+                    </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
