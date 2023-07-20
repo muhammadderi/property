@@ -239,8 +239,8 @@ h2,
 }
 
 .card {
-  width: 22rem;
-  height: 440px;
+  width: 95%;
+  height: 460px;
   border: none;
 }
 
@@ -260,4 +260,23 @@ h2,
 .card:hover {
   background: linear-gradient(170deg, var(--pr-color), #007245, #007245, #000);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all ease-in 0.3s;
+}
+
+.card:hover .card-body h4 {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover .card-body p {
+  color: #fff;
+  transition: all ease-in-out 0.4s;
+}
+
+.card-facility {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  background-color: #fff;
 }
