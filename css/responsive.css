@@ -1,6 +1,7 @@
 @media screen and (max-width: 922px) {
 }
 
+/* test */
 /* tablet */
 @media screen and (max-width: 576px) {
   .hero-tagline h1 {
@@ -48,8 +49,18 @@
   }
   #homefeatures .button-fitur {
     font-size: 12px;
-    width: 100px;
+    width: 45%;
     height: 30px;
+  }
+  #contact h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+  #contact a {
+    font-size: 14px;
+  }
+  .copyright p {
+    padding-top: 20px;
   }
 }
 
